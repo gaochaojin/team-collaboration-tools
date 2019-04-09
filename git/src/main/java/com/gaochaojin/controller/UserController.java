@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("/hello")
     public Object sayHello() {
-        logger.debug("springboot项目--版本v1.0");
+        logger.debug("springboot项目--版本v1.1----git add -A");
         return "hello";
     }
 }
