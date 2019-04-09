@@ -91,6 +91,7 @@ git remote -v  #查看远程连接详情
 git push --set-upstream origin master #上传本地项目到远程仓库,也可以使用下面这个 
 git push -u origin master
 git fetch #提取远程仓库（如果服务器有修改，不会到本地）
+git pull origin master #从远程仓库拉取代码
 git clone git地址  #从远程仓库克隆项目到本地仓库
 ```
 
