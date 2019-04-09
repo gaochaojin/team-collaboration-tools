@@ -91,5 +91,51 @@ git remote -v  #查看远程连接详情
 git push --set-upstream origin master #上传本地项目到远程仓库,也可以使用下面这个 
 git push -u origin master
 git fetch #提取远程仓库（如果服务器有修改，不会到本地）
+git clone git地址  #从远程仓库克隆项目到本地仓库
 ```
 
+#### master分支
+
+主分支
+
+保持稳定
+
+不允许直接往这个分支提交代码，只允许往这个分支发起merge request
+
+只允许release分支和hotfix分支进行合流 , 所有在Master分支上的Commit应该Tag
+
+#### develop分支
+
+开发分支
+
+相对稳定的分支
+
+用于日常开发，包括代码优化、功能性开发
+
+#### feature分支
+
+特性分支
+
+从develop分支拉取，用于下个迭代版本的功能特性开发
+
+功能开发完毕合并到develop分支, 合并完分支后一般会删点这个Feature分支，但是我们也可以保留。
+
+#### release分支
+
+发布分支
+
+从develop分支拉取
+
+用于回归测试，bug修复
+
+发布完成后打tag并合入master和develop, (记住：一旦打了Release分支之后不要从Develop分支上合并新的改动到Release分支)
+
+#### hotfix分支
+
+热更新分支
+
+从develop分支拉取
+
+用于紧急修复上线版本的问题
+
+修复后打tag并合入master和develop
