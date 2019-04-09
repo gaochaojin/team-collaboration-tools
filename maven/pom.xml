@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gaochaojin</groupId>
+    <artifactId>maven</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>maven-origin-package</module>
+        <module>maven-plugin</module>
+        <module>maven-web</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <springframework.version>4.0.2.RELEASE</springframework.version>
+        <jackson.version>2.5.0</jackson.version>
+        <slf4j.version>1.7.7</slf4j.version>
+        <jackson.version>2.7.3</jackson.version>
+        <springfox.version>2.5.0</springfox.version>
+    </properties>
+
+    <!--局部配置方式 远程仓库-->
+    <repositories>
+        <repository>
+            <id>nexus-gaochaojin</id>
+            <name>gaochaojin Public</name>
+            <url>http://47.98.142.70:8081/repository/maven-public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!--配置上传url-->
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Release Deploy</name>
+            <url>http://47.98.142.70:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Snapshot Deploy</name>
+            <url>http://47.98.142.70:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+</project>
