@@ -52,8 +52,28 @@ git log --oneline --graph  #日志简化成一行，同时显示分支
 #### 分支
 
 ```shell
-git branch dev  #创建一个dev分支
-git checkout dev #切换到分支dev
 git branch   #查看分支
+git branch dev  #创建一个dev分支（最新提交点）
+git branch test 提交点 #创建一个分支（指定提交点）
+git checkout dev #切换到分支dev
+git branch -d test #删除分支
+git merge dev    #合并分支（在master节点上进行操作，进行合并）
+
 ```
+
+#### gitk命令展示git界面
+
+```shell
+gitk
+```
+
+![1554818172348](C:\Users\gaochaojin\AppData\Roaming\Typora\typora-user-images\1554818172348.png)
+
+#### 标签
+
+```shell
+git tag -a v1.0 提交点  #在提交点上打标签
+```
+
+#### 恢复
 

@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("/hello")
     public Object sayHello() {
-        logger.debug("springboot项目--版本v2.2----master和dev合并，解决冲突");
+        logger.debug("springboot项目--版本v3.0----新增内容，给恢复使用");
         return "hello";
     }
 }
