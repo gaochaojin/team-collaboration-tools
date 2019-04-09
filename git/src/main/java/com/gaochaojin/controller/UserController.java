@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("/hello")
     public Object sayHello() {
-        logger.debug("springboot项目--版本v1.3----添加.gitignore文件");
+        logger.debug("springboot项目--版本v2.0--创建分支dev");
         return "hello";
     }
 }

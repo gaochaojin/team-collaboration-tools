@@ -36,3 +36,24 @@ git status
 
 #### 忽略和排除
 
+```shell
+touch .gitignore  #生成.gitignore文件，然后向里面添加需要忽略的文件和文件夹,提交.gitignore文件未生效
+git rm -r --cached . #将本地缓存删除（改变成未被追踪状态），然后再提交，就可以忽略和排除了
+```
+
+#### 日志
+
+```shell
+git log 
+git log --oneline  #日志简化成一行
+git log --oneline --graph  #日志简化成一行，同时显示分支
+```
+
+#### 分支
+
+```shell
+git branch dev  #创建一个dev分支
+git checkout dev #切换到分支dev
+git branch   #查看分支
+```
+
