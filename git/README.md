@@ -77,3 +77,19 @@ git tag -a v1.0 提交点  #在提交点上打标签
 
 #### 恢复
 
+```shell
+git reset --hard 提交点  #恢复到提交点
+git revert HEAD  #撤销前一次的commit，会新创建一个提交点
+```
+
+#### 本地与远程仓库通讯
+
+```shell
+git remote add origin git地址   #本地新建一个远程连接origin
+git remote #查看远程连接
+git remote -v  #查看远程连接详情
+git push --set-upstream origin master #上传本地项目到远程仓库,也可以使用下面这个 
+git push -u origin master
+git fetch #提取远程仓库（如果服务器有修改，不会到本地）
+```
+
