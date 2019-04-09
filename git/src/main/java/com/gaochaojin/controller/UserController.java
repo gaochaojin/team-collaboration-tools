@@ -18,7 +18,7 @@ public class UserController {
 
     @RequestMapping("/hello")
     public Object sayHello() {
-        logger.debug("springboot项目--版本v3.0----新增内容，给恢复使用");
+        logger.debug("springboot项目--版本v3.1--远程修改--查看fetch命令是否可以获取到");
         return "hello";
     }
 }
