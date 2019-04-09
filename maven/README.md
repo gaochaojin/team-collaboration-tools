@@ -129,3 +129,22 @@ idea中新建一个项目如图：
 生成的项目的结构为：
 ![1554798304446](C:\Users\gaochaojin\AppData\Roaming\Typora\typora-user-images\1554798304446.png)
 
+
+
+##### nexus安装：
+
+下载地址：<https://www.sonatype.com/download-oss-sonatype>
+
+解压：
+
+```shell
+tar -zxvf nexus-3.15.2-01-unix.tar.gz
+```
+
+设置用户并启动：
+
+```shell
+vi bin/nexus.rc   #设置run_as_user="root"
+bin/nexus start   #启动exus 默认端口号为8081，访问连接为http://localhost:8081  用户名/密码:admin/admin123
+```
+
